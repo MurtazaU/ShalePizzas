@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shale-Pizzaass Pizza Flavours</title>
+</head>
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./fontawesome-/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/fontawesome.min.css"/>
+
+    <!-- Tab Icon -->
+    <link rel="icon" href="./Imgs/Shale Pizzaass-logos_white_Tab.png" />
+
+    <!-- Header && Footer CSS Link -->
+    <link rel="stylesheet" href="./CSS/header.css" />
+
+    <!-- FontAwesome Link -->
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css" />
+
+    <!-- Home Css -->
+    <link rel="stylesheet" href="./CSS/home.css" />
+
+    <!-- Cursor Tracker CSS -->
+    <link rel="stylesheet" href="./CSS/eyes.css" />
+    <!--Pre loader CSS-->
+
+    <style>
+      .card-icon:hover {
+        color: red;
+      }
+      .card-icon {
+        transition: color 0.5s ease-in-out;
+      }
+      .card-eye:hover {
+        color: rgb(53, 53, 167);
+      }
+      .card-eye {
+        transition: color 0.5s ease-in-out;
+      }
+      .btn:hover {
+        background-color: #F3D503;
+      }
+      .btn {
+        visibility: visible;
+          background-color: #D72323;
+        transition: background-color 0.5s ease-in-out;
+      }
+      .card {
+        box-shadow: none;
+        transition: background-color 0.5s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.1); 
+        box-shadow: 5px 5px 5px 10px grey;
+      }
+      .footer {
+        visibility: hidden;
+      }
+      .card:hover .footer {
+        visibility: visible;
+        color: grey;
+        font-size: 30px;
+      }
+      .fa-cart-arrow-down:hover {
+        color: orange;
+      }
+      .fa-cart-arrow-down {
+        transition: color 0.5s ease-in-out;
+      }
+      h1 {
+        color: #F3D503;
+        margin-bottom: 20px;
+      }
+      body {
+          background-color: #303841;
+      }
+      span{
+          color: #D72323;
+      }
+    
+      #preloader{
+          background: #000 url(./images/pizza\ 2.gif) no-repeat center center;
+          background-size: 10%;
+          height: 100vh;
+          width: 100%;
+          position: fixed;
+          z-index: 100;
+      }
+    </style>
+<body>
+    <!--Pre Loader Starts-->
+    <div id="preloader">Pizza Shell</div>
+    <!-- NavBar Starts -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- HamBurger Icon -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo-collapse"
+            height="50px"
+            src="./Imgs/Shale Pizzaass-logos.png"
+            alt=""
+        /></a>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <!-- Nav-Links -->
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <span></span>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <!-- DropDown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./Pizza.html">Pizza</a></li>
+                <li><a class="dropdown-item" href="./Garlic.html">Garlic Breads</a></li>
+                <li><a class="dropdown-item" href="./Sandwiches.html">Pizza Sandwiches</a></li>
+                <li><a class="dropdown-item" href="./Desserts.html">Desserts</a></li>
+                <li><a class="dropdown-item" href="./beverages.html">Beverages</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Locations</a>
+            </li>
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <a class="navbar-brand logo" href="index.html">
+                <img
+                  class="navbar-logo"
+                  src="./Imgs/Shale Pizzaass-logos.png"
+                  alt=""
+                />
+              </a>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Franchise Info</a>
+            </li>
+            <!-- DropDown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Deals
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./weekend.html">Weekend Special</a></li>
+                <li><a class="dropdown-item" href="./Combo.html">Combo Offers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+          </ul>
+
+          <div class="d-flex justify-content-between">
+            <!-- Right Navbar -->
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <!-- Menu Download Button -->
+            <a href="./pdf/Pizza Shale flyer.pdf" download> <button class="btn btn-danger navbar-menu-download">Menu Download
+            </button></button></a>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <div class="container" style="margin-top: 100px">
+        <h1>"Pizza Flavours"</h1>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <img
+                height="200px"
+                src="./img/sicilian_pizza_47364_16x9.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Sicilian Pizza</h4>
+                <p class="card-text">
+                 <b><Span>Delicious Sicilian pizza of Shale Pizzaass</Span></b> 
+                </p>
+                <p class="card-text">
+                  <strong style="float: right"><i>$:12</i></strong>
+                </p>
+                <div class="footer" style="clear: both">
+                  <button style="float: left" class="btn btn-success">
+                    Order Now
+                  </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                  <i class="fa fa-eye card-eye"></i>
+                  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <img
+                height="200px"
+                src="./img/Fajita.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Chicken Fajita</h4>
+                <p class="card-text">
+                  <b><Span>Delicious Chicken Fajita of Shale Pizzaass</Span></b> 
+                </p>
+                <p class="card-text">
+                  <strong style="float: right"><i>$:12</i></strong>
+                </p>
+                <div class="footer" style="clear: both">
+                  <button style="float: left" class="btn btn-success">
+                    Order Now
+                  </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                  <i class="fa fa-eye card-eye"></i>
+                  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <img
+                height="200px"
+                src="./img/tikka.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Chicken Tikka</h4>
+                <p class="card-text">
+                  <b><Span>Delicious Chicken Tikka of Shale Pizzaass</Span></b> 
+                </p>
+                <p class="card-text">
+                  <strong style="float: right"><i>$:12</i></strong>
+                </p>
+                <div class="footer" style="clear: both">
+                  <button style="float: left" class="btn btn-success">
+                    Order Now
+                  </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                  <i class="fa fa-eye card-eye"></i>
+                  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card">
+              <img
+                height="200px"
+                src="./img/Peporoni.jpg"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Peperoni Pizza</h4>
+                <p class="card-text">
+                  <b><Span>Delicious Peperoni Pizza of Shale Pizzaass</Span></b> 
+                </p>
+                <p class="card-text">
+                  <strong style="float: right"><i>$:12</i></strong>
+                </p>
+                <div class="footer" style="clear: both">
+                  <button style="float: left" class="btn btn-success">
+                    Order Now
+                  </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                  <i class="fa fa-eye card-eye"></i>
+                  <i class="fas fa-cart-arrow-down"></i>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="container" style="margin-top: 20px">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                      <img
+                        height="200px"
+                        src="./img/margherita-pizza.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Margherita Pizza</h4>
+                        <p class="card-text">
+                          <b><Span>Delicious Margherita Pizza of Shale Pizzaass</Span></b> 
+                        </p>
+                        <p class="card-text">
+                          <strong style="float: right"><i>$:12</i></strong>
+                        </p>
+                        <div class="footer" style="clear: both">
+                          <button style="float: left" class="btn btn-success">
+                            Order Now
+                          </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                          <i class="fa fa-eye card-eye"></i>
+                          <i class="fas fa-cart-arrow-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <img
+                        height="200px"
+                        src="./img/Chesse.jpeg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Chesse Lover</h4>
+                        <p class="card-text">
+                          <b><Span>Delicious Chesse Lover of Shale Pizzaass</Span></b> 
+                        </p>
+                        <p class="card-text">
+                          <strong style="float: right"><i>$:12</i></strong>
+                        </p>
+                        <div class="footer" style="clear: both">
+                          <button style="float: left" class="btn btn-success">
+                            Order Now
+                          </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                          <i class="fa fa-eye card-eye"></i>
+                          <i class="fas fa-cart-arrow-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <img
+                        height="200px"
+                        src="./img/Afghani-Feast.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Afghani Feast</h4>
+                        <p class="card-text">
+                          <b><Span>Delicious Afghani Feast of Shale Pizzaass</Span></b> 
+                        </p>
+                        <p class="card-text">
+                          <strong style="float: right"><i>$:12</i></strong>
+                        </p>
+                        <div class="footer" style="clear: both">
+                          <button style="float: left" class="btn btn-success">
+                            Order Now
+                          </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                          <i class="fa fa-eye card-eye"></i>
+                          <i class="fas fa-cart-arrow-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <img
+                        height="200px"
+                        src="./img/Creamy.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Creamy Melt</h4>
+                        <p class="card-text">
+                          <b><Span>Delicious Creamy Melt pizza of Shale Pizzaass</Span></b> 
+                        </p>
+                        <p class="card-text">
+                          <strong style="float: right"><i>$:12</i></strong>
+                        </p>
+                        <div class="footer" style="clear: both">
+                          <button style="float: left" class="btn btn-success">
+                            Order Now
+                          </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                          <i class="fa fa-eye card-eye"></i>
+                          <i class="fas fa-cart-arrow-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        
+        </div>
+        <div class="container" style="margin-top: 20px">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                      <img
+                        height="200px"
+                        src="./img/Shale special.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Shale Special</h4>
+                        <p class="card-text">
+                          <b><Span>Delicious Shale Special of Shale Pizzaass</Span></b> 
+                        </p>
+                        <p class="card-text">
+                          <strong style="float: right"><i>$:15</i></strong>
+                        </p>
+                        <div class="footer" style="clear: both">
+                          <button style="float: left" class="btn btn-success">
+                            Order Now
+                          </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                          <i class="fa fa-eye card-eye"></i>
+                          <i class="fas fa-cart-arrow-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="card">
+                      <img
+                        height="200px"
+                        src="./img/Capri.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                      <div class="card-body">
+                        <h4 class="card-title">Capriccioso Pizza</h4>
+                        <p class="card-text">
+                          <b><Span>Delicious Capriccioso Pizza of Shale Pizzaass</Span></b> 
+                        </p>
+                        <p class="card-text">
+                          <strong style="float: right"><i>$:15</i></strong>
+                        </p>
+                        <div class="footer" style="clear: both">
+                          <button style="float: left" class="btn btn-success">
+                            Order Now
+                          </button> &nbsp;&nbsp;&nbsp;&nbsp;
+                          <i class="fa fa-heart card-icon" style="margin-left: 10px"></i>
+                          <i class="fa fa-eye card-eye"></i>
+                          <i class="fas fa-cart-arrow-down"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+       <!--Pre Loader Code-->
+       <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){
+            loader.style.display = "none";
+        })
+    </script>
+
+
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
